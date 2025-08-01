@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Recursive } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/landing/Header";
+import Footer from "@/components/landing/Footer";
 
 const recursive = Recursive({
   variable: "--font-recursive",
@@ -20,9 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${recursive.variable} antialiased`}
+        className={`${recursive.variable} antialiased mx-8 my-4`}
       >
-        {children}
+        <Header />
+        <div>
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

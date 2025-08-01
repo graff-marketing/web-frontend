@@ -5,3 +5,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-recursive), Arial, Helvetica, sans-serif;
 }
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1" sodipodi:docname="graff no text.svg" inkscape:version="1.4.2 (f4327f4, 2025-05-13)" inkscape:export-filename="graff_no_text_no_bg.png" inkscape:export-xdpi="96" inkscape:export-ydpi="96" viewBox="80.02 119.02 64.47 64.47">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="0.44097222" inkscape:cx="397.98425" inkscape:cy="919.55906" inkscape:window-width="1366" inkscape:window-height="697" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="layer1" inkscape:export-bgcolor="#ffffff00"/>
+  <defs id="defs1">
+    <linearGradient id="swatch14" inkscape:swatch="solid">
+      <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop15"/>
+    </linearGradient>
+    <linearGradient id="linearGradient7" inkscape:collect="always">
+      <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop7"/>
+      <stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="stop8"/>
+    </linearGradient>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient7" id="linearGradient8" x1="66.622918" y1="164.67917" x2="146.62292" y2="164.67917" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.90000003,0,0,0.90000003,-53.93771,-13.332087)"/>
+  </defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+    <g id="g17" transform="matrix(0.66666667,0,0,0.66666667,77.152334,66.952341)">
+      <circle style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.40567;stroke-dasharray:none;stroke-opacity:1" id="path1" cx="52.657001" cy="126.45702" r="47.297165"/>
+      <ellipse style="opacity:0.9;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.56533;stroke-dasharray:none;stroke-opacity:1" id="path1-8-1" cx="46.918865" cy="130.84801" rx="41.217335" ry="41.217339"/>
+      <ellipse style="fill:#000000;fill-opacity:1;stroke:url(#linearGradient8);stroke-width:1.26336;stroke-dasharray:none;stroke-opacity:1" id="path1-8" cx="42.022919" cy="134.87917" rx="35.36832" ry="35.368324"/>
+    </g>
+  </g>
+</svg>

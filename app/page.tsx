@@ -113,13 +113,13 @@ export default function Home() {
       </div>
 
       {/** Integrations */}
-      <div className="flex flex-col gap-4">
-        <h1>Integrations</h1>
+      <div className="flex flex-col gap-4 pb-8 items-center">
+        <h1 className="text-3xl font-bold">Integrations</h1>
         <Image
           src="/assets/integrations.svg"
           alt="integrations"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
         />
       </div>
     </div>

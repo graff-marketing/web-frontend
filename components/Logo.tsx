@@ -5,10 +5,10 @@ const Logo = () => {
   return (
     <div className='flex'>
       <div className='hidden md:flex cursor-pointer'>
-        <Image src="/assets/graff.svg" alt='logo with text' width={110} height={110} />
+        <Image src="/assets/logo/light/graff.svg" alt='logo with text' width={110} height={110} />
       </div>
       <div className='flex md:hidden cursor-pointer'>
-        <Image src="/assets/graff_no_text.svg" alt='logo without text' width={48} height={48} />
+        <Image src="/assets/logo/light/graff_no_text.svg" alt='logo without text' width={48} height={48} />
       </div>
     </div>
   );

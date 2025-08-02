@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div className='flex gap-4 items-center w-full'>
-      <Logo />
+      <Logo dark={false} />
       <div className='flex gap-4 items-center w-full'>
         {links
           .filter(link => link.name !== "Contact")

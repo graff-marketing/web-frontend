@@ -30,7 +30,7 @@ const Footer = () => {
   return (
     <div className='bg-black text-white flex -mx-8 -mb-8 px-8 py-16'>
       <div>
-        <Logo />
+        <Logo dark={true} />
       </div>
       <div className='flex ml-auto gap-12'>
         {footerLinks.map((link, index) => (

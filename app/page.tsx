@@ -114,7 +114,7 @@ export default function Home() {
 
       {/** Integrations */}
       <div className="flex flex-col gap-4 pb-8 items-center">
-        <h1 className="text-3xl font-bold">Integrations</h1>
+        <h1 className="text-5xl font-bold">Integrations</h1>
         <Image
           src="/assets/integrations.svg"
           alt="integrations"

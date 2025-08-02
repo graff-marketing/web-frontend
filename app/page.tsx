@@ -70,9 +70,7 @@ export default function Home() {
             Graff unifies your ad analytics across multiple platforms
             into a single powerful dashboard helping you optimize performance and drive business growth.
           </p>
-          <div>
-            <JoinWaitlist />
-          </div>
+          <JoinWaitlist />
         </div>
         <div>
           <Image
@@ -147,6 +145,7 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <JoinWaitlist />
       </div>
 
       {/** Integrations */}
@@ -158,6 +157,7 @@ export default function Home() {
           width={500}
           height={500}
         />
+        <JoinWaitlist />
       </div>
     </div>
   );

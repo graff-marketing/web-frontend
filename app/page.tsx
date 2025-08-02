@@ -111,6 +111,17 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/** Integrations */}
+      <div className="flex flex-col gap-4">
+        <h1>Integrations</h1>
+        <Image
+          src="/assets/integrations.svg"
+          alt="integrations"
+          width={100}
+          height={100}
+        />
+      </div>
     </div>
   );
 }

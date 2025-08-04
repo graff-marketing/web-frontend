@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import {
   Sheet,
   SheetContent,
@@ -11,9 +12,11 @@ import Logo from '../Logo';
 import HeaderLink from './HeaderLink';
 
 const NavBarMobile = () => {
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+
   return (
     <div className='block lg:hidden ml-auto'>
-      <Sheet>
+      <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
         <SheetTrigger>
           <RiMenu2Fill size={36} />
         </SheetTrigger>
@@ -23,7 +26,7 @@ const NavBarMobile = () => {
           </SheetTitle>
           <div className='flex flex-col gap-4'>
             {HeaderLinks.map(link => (
-              <HeaderLink key={link.href} link={link} />
+              <HeaderLink setIsSheetOpen={setIsSheetOpen} key={link.href} link={link} />
             ))}
           </div>
         </SheetContent>

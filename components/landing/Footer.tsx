@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../Logo';
 import Link from 'next/link';
+import { FaInstagram, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const footerLinks = [
@@ -27,10 +28,31 @@ const Footer = () => {
     },
   ];
 
+  const socials = [
+    { name: 'X', icon: FaXTwitter, url: '#' },
+    { name: 'Instagram', icon: FaInstagram, url: '#' },
+    { name: 'LinkedIn', icon: FaLinkedin, url: '#' },
+  ];
+
+  const businessName = "Teddy Muli";
+
   return (
-    <div className='bg-black text-white flex -mx-8 -mb-8 px-8 py-16 gap-4'>
-      <div>
+    <div className='bg-black text-white flex flex-col md:flex-row -mx-8 -mb-8 px-8 py-16 gap-4'>
+      <div className='flex flex-col gap-4'>
         <Logo dark={true} />
+        <div className='flex gap-4 mx-2'>
+          {socials.map(social => (
+            <a
+              key={social.name}
+              href={social.url}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <social.icon size={24} />
+            </a>
+          ))}
+        </div>
+        <div>© {new Date().getFullYear()} {businessName}. All rights reserved.</div>
       </div>
       <div className='flex ml-auto gap-4 md:gap-12'>
         {footerLinks.map((link, index) => (

@@ -2,6 +2,7 @@ import { HeaderLinks } from '@/constants';
 import Link from 'next/link';
 import React from 'react';
 import JoinWaitlist from './JoinWaitlist';
+import HeaderLink from './HeaderLink';
 
 const NavBar = () => {
   return (
@@ -9,14 +10,10 @@ const NavBar = () => {
       {HeaderLinks
         .filter(link => link.name !== "Contact")
         .map(link => (
-      <Link key={link.name} href={link.href}>
-        {link.name}
-      </Link>
-        ))}
+        <HeaderLink link={link} />
+      ))}
       <div className="flex gap-2 items-center ml-auto">
-        <Link key="Contact" href="/contact">
-          Contact
-        </Link>
+        <HeaderLink link={{href: "/contact", name: "Contact"}} />
         <JoinWaitlist />
       </div>
     </div>

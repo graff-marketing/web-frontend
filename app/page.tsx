@@ -50,7 +50,7 @@ export default function Home() {
       </div>
 
       {/** Features */}
-      <div className="bg-[#FFA500] -mx-8 p-8 flex flex-col gap-4">
+      <div id="features" className="bg-[#FFA500] -mx-8 p-8 flex flex-col gap-4">
         <h1 className="text-5xl font-bold">Features</h1>
         <p className="max-w-2/3 text-xl">
           Graff unifies your ad performance from platforms like Facebook, Instagram, TikTok, and Google — helping you uncover insights, cut waste, and grow faster.
@@ -60,7 +60,7 @@ export default function Home() {
       </div>
 
       {/** Integrations */}
-      <div className="flex flex-col gap-4 pb-8 items-center">
+      <div id="integrations" className="flex flex-col gap-4 pb-8 items-center">
         <h1 className="text-5xl font-bold">Integrations</h1>
         <Image
           src="/assets/integrations.svg"

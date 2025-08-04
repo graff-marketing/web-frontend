@@ -2,8 +2,8 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div>
-      <h1>Terms of Service (TOS)</h1>
+    <div className='mt-8'>
+      <h1 className='text-xl font-bold'>Terms of Service (TOS)</h1>
       <p>Effective Date: August 04 2025</p>
       <p>These Terms and Conditions govern your access to and use of Graff:</p>
       <p>1. Services Provided: Graff offers consolidated ad analytics, smart insights, and platform comparisons.</p>

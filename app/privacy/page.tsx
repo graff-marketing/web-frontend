@@ -2,10 +2,10 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div>
-      <h1>Privacy Policy</h1>
+    <div className='mt-8'>
+      <h1 className='text-xl font-bold'>Privacy Policy</h1>
       <p>Effective Date: August 04 2025</p>
-      <p>Graff ("we", "our", or "us") respects your privacy. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use our website and services.</p>
+      <p>Graff ("we", "our", or "us") respects your privacy.<br/>This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use our website and services.</p>
       <h2>1. Information We Collect:</h2>
       <ul>
         <li>Personal Information: Name, email, contact details when you sign up.</li>

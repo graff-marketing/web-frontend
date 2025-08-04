@@ -2,8 +2,8 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div>
-      <h1>Terms and Conditions (Terms)</h1>
+    <div className='mt-8'>
+      <h1 className='text-xl font-bold'>Terms and Conditions (Terms)</h1>
       <p>Effective Date: August 04 2025</p>
       <p>1. Account Registration: You must provide accurate information and maintain the confidentiality of your account credentials.</p>
       <p>2. Acceptable Use: Do not use our platform for illegal activities or to breach third-party rights.</p>

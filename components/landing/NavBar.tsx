@@ -1,5 +1,4 @@
 import { HeaderLinks } from '@/constants';
-import Link from 'next/link';
 import React from 'react';
 import JoinWaitlist from './JoinWaitlist';
 import HeaderLink from './HeaderLink';
@@ -10,7 +9,7 @@ const NavBar = () => {
       {HeaderLinks
         .filter(link => link.name !== "Contact")
         .map(link => (
-        <HeaderLink link={link} />
+        <HeaderLink key={link.href} link={link} />
       ))}
       <div className="flex gap-2 items-center ml-auto">
         <HeaderLink link={{href: "/contact", name: "Contact"}} />

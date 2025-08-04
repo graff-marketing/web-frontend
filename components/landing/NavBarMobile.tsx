@@ -23,7 +23,7 @@ const NavBarMobile = () => {
           </SheetTitle>
           <div className='flex flex-col gap-4'>
             {HeaderLinks.map(link => (
-              <HeaderLink link={link} />
+              <HeaderLink key={link.href} link={link} />
             ))}
           </div>
         </SheetContent>

@@ -1,7 +1,9 @@
+"use client"
 import React from 'react';
 import Logo from '../Logo';
 import Link from 'next/link';
 import { FaInstagram, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
+import { usePathname } from 'next/navigation';
 
 const Footer = () => {
   const footerLinks = [
@@ -10,7 +12,7 @@ const Footer = () => {
       links: [
         {name: "Privacy Policy", href: "/privacy"},
         {name: "Terms Of Service", href: "/tos"},
-        {name: "Terms and Conditions", href: "/toc"}
+        {name: "Terms and Conditions", href: "/terms"}
       ]
     },
     { 
@@ -35,9 +37,10 @@ const Footer = () => {
   ];
 
   const businessName = "Teddy Muli";
+  const pathname = usePathname();
 
   return (
-    <div className='bg-black text-white flex flex-col md:flex-row -mx-8 -mb-8 px-8 py-16 gap-4'>
+    <div className={`${pathname === "/" ? "block" : "hidden"} bg-black text-white flex flex-col md:flex-row -mx-8 -mb-8 px-8 py-16 gap-4`}>
       <div className='flex flex-col gap-4'>
         <Logo dark={true} />
         <div className='flex gap-4 mx-2'>

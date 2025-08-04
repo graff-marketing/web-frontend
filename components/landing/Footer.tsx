@@ -59,7 +59,7 @@ const Footer = () => {
           <div className='flex flex-col' key={index}>
             <p className='text-lg md:text-xl font-bold mb-4'>{link.group}</p>
             {link.links.map((link) => (
-              <Link className='text-sm md:text-lg' key={link.href} href={link.href}>{link.name}</Link>
+              <Link className='text-sm md:text-[16px]' key={link.href} href={link.href}>{link.name}</Link>
             ))}
           </div>
         ))}

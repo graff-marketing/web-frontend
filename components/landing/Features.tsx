@@ -1,6 +1,7 @@
+"use client"
 import Image from 'next/image';
 import React, { useRef } from 'react';
-import { LuCircleArrowLeft, LuCircleArrowRight, LuQuote } from "react-icons/lu";
+import { LuCircleArrowLeft, LuCircleArrowRight } from "react-icons/lu";
 
 const Features = () => {
   const features = [
@@ -40,7 +41,8 @@ const Features = () => {
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
-      const scrollAmount = scrollContainerRef.current.clientWidth / 2.5;
+      const containerWidth = scrollContainerRef.current.clientWidth;
+      const scrollAmount = window.innerWidth < 768 ? containerWidth : containerWidth / 2.5;
       scrollContainerRef.current.scrollBy({
         left: -scrollAmount,
         behavior: 'smooth'
@@ -50,7 +52,8 @@ const Features = () => {
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
-      const scrollAmount = scrollContainerRef.current.clientWidth / 2.5;
+      const containerWidth = scrollContainerRef.current.clientWidth;
+      const scrollAmount = window.innerWidth < 768 ? containerWidth : containerWidth / 2.5;
       scrollContainerRef.current.scrollBy({
         left: scrollAmount,
         behavior: 'smooth'
@@ -60,7 +63,7 @@ const Features = () => {
 
 
   return (
-    <div>
+    <div className='flex flex-col gap-4'>
       <div className="flex ml-auto gap-8">
         <LuCircleArrowLeft
           size={40}
@@ -80,7 +83,7 @@ const Features = () => {
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {features.map((feature, index) => (
-          <div key={index} className="flex-shrink-0 w-[calc(40%-8px)]">
+          <div key={index} className="flex-shrink-0 w-full md:w-[calc(40%-8px)]">
             <Image
               src={feature.image}
               alt={feature.name}

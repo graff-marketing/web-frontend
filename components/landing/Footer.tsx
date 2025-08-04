@@ -28,16 +28,16 @@ const Footer = () => {
   ];
 
   return (
-    <div className='bg-black text-white flex -mx-8 -mb-8 px-8 py-16'>
+    <div className='bg-black text-white flex -mx-8 -mb-8 px-8 py-16 gap-4'>
       <div>
         <Logo dark={true} />
       </div>
-      <div className='flex ml-auto gap-12'>
+      <div className='flex ml-auto gap-4 md:gap-12'>
         {footerLinks.map((link, index) => (
           <div className='flex flex-col' key={index}>
-            <p className='text-xl font-bold mb-4'>{link.group}</p>
+            <p className='text-lg md:text-xl font-bold mb-4'>{link.group}</p>
             {link.links.map((link) => (
-              <Link key={link.href} href={link.href}>{link.name}</Link>
+              <Link className='text-sm md:text-lg' key={link.href} href={link.href}>{link.name}</Link>
             ))}
           </div>
         ))}
